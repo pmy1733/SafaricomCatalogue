@@ -60,7 +60,7 @@ public class Product implements Serializable {
     }
 
     public void setTeam(String team) {
-        this.team = link;
+        this.team = team;
     }
 
     public String getTeamString() {
