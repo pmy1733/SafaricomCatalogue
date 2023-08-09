@@ -13,9 +13,8 @@ function createData(
   division,
   description,
   squadExecuting,
-  charges
 ) {
-  return { id, ProductName, division, description, squadExecuting, charges };
+  return { id, ProductName, division, description, squadExecuting, };
 }
 
 const rows = [
@@ -56,7 +55,6 @@ export default function BasicTable() {
             <TableCell align="right">Division</TableCell>
             <TableCell align="right">Description</TableCell>
             <TableCell align="right">Squad Executing</TableCell>
-            <TableCell align="right">Charges</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -72,7 +70,7 @@ export default function BasicTable() {
               <TableCell align="right">{row.division}</TableCell>
               <TableCell align="right">{row.description}</TableCell>
               <TableCell align="right">{row.squadExecuting}</TableCell>
-              <TableCell align="right">{row.charges}</TableCell>
+  
             </TableRow>
           ))}
         </TableBody>
