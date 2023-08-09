@@ -5,7 +5,6 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import org.apache.commons.math3.analysis.function.Identity;
 
 Identity @Table(name="safaricom_catalogue")
@@ -25,7 +24,11 @@ public class Product implements Serializable {
     private String division;
     private String team;
 
-    public Product() {
+    public Product(int id, String name, String link, String description) {
+        this.itemId = id;
+        this.name = name;
+        this.link = link;
+        this.description = description;
     }
 
     public int getItemId() {
@@ -59,13 +62,15 @@ public class Product implements Serializable {
     public void setTeam(String team) {
         this.team = link;
     }
-     public String getTeamString() {
+
+    public String getTeamString() {
         return team;
     }
 
     public void setDivision(String division) {
         this.division = division;
     }
+
     public String getDescriptioString() {
         return division;
     }
