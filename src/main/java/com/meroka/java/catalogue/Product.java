@@ -5,9 +5,9 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import org.apache.commons.math3.analysis.function.Identity;
 
-Identity @Table(name="safaricom_catalogue")
+@Entity
+@Table(name = "PRODUCT")
 
 public class Product implements Serializable {
 
