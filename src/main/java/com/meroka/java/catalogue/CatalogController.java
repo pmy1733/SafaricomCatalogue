@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/api/catalog")
-public class CatalogueController {
+public class CatalogController {
 
     @Autowired
     private ProductRepository repository;

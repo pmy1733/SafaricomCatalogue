@@ -8,29 +8,31 @@ import javax.persistence.Table;
 
 import org.apache.commons.math3.analysis.function.Identity;
 
-Identity
-@Table(name = "PRODUCT")
+Identity @Table(name="safaricom_catalogue")
+
 public class Product implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    private String itemId;
+    private int itemId;
 
     private String name;
 
     private String description;
 
-    private double price;
+    private String link;
+    private String division;
+    private String team;
 
     public Product() {
     }
 
-    public String getItemId() {
+    public int getItemId() {
         return itemId;
     }
 
-    public void setItemId(String itemId) {
+    public void setItemId(int itemId) {
         this.itemId = itemId;
     }
 
@@ -50,16 +52,27 @@ public class Product implements Serializable {
         this.description = description;
     }
 
-    public double getPrice() {
-        return price;
+    public String getLinkString() {
+        return link;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setTeam(String team) {
+        this.team = link;
+    }
+     public String getTeamString() {
+        return team;
+    }
+
+    public void setDivision(String division) {
+        this.division = division;
+    }
+    public String getDescriptioString() {
+        return division;
     }
 
     @Override
     public String toString() {
-        return "Product [itemId=" + itemId + ", name=" + name + ", price=" + price + "]";
+        return "Product [itemId=" + itemId + ", name=" + name + "link=" + "description" + description + " team" + team
+                + " division" + division + " link=" + link + "]";
     }
 }
