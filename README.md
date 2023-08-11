@@ -2,10 +2,10 @@ Capstone Project: **Safaricom Catalogue**
 ## Project description
 This is a web based application that allows safaricom employees(old and new to have visibility of all safaricom products / services intenally.
 ## Author(s) information
-Pharminous Nyabuto
-Peter Njukia
-Anastacia Ngendo
-Kevin Odhiambo
+***Pharminous Nyabuto_**
+***Peter Njukia_**
+**Anastacia Ngendo_**
+***Kevin Odhiambo_**
 ## Setup instructions - includes any scripts that need to be run if necessary
 
 The web application code can be clonned from: https://github.com/pmy1733/SafaricomCatalogue.git
